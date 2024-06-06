@@ -3,7 +3,7 @@
     <nav class="bg-white shadow-md">
       <div class="my-auto mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-2 w-20 h-20">
-          <img src="/favicon.ico" />
+          <NuxtImg src="/favicon.ico" ></NuxtImg>
         </div>
         <div>
           <NuxtLink to="/register" class="inline-block border border-blue-500 rounded py-1 px-3 bg-blue-500 text-white">

@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <h1>Register Page</h1>
-    <!-- Add your register page content here -->
-  </div>
+  <form class="max-w-sm mx-auto">
+    
+  </form>
 </template>
 
 <script>
