@@ -3,8 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', "@nuxt/image"],
   css:[
-    '@fortawesome/fontawesome-svg-core/styles.css',
-    '~/assets/css/main.css'
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   build: {
     transpile: ['@fortawesome/vue-fontawesome']
