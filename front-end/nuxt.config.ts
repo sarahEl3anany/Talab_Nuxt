@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  axios: {
-    baseURL: process.env.API_URL,
-  },
+  // axios: {
+  //   baseURL: process.env.API_URL,
+  // },
   modules: ['@nuxtjs/tailwindcss', "@nuxt/image"],
   css:[
     '@fortawesome/fontawesome-svg-core/styles.css'
@@ -12,8 +12,7 @@ export default defineNuxtConfig({
     transpile: ['@fortawesome/vue-fontawesome']
   },
   image: {
-    // Specify static provider or other settings if needed
-    // Example configuration for static images:
+    dir: "/public",
     providers: {
       local: {
         // Defaults to '/_nuxt/image' if not set
@@ -23,7 +22,6 @@ export default defineNuxtConfig({
         }
       }
     },
-    // Defaults
     domains: [],
     alias: {
       public: '/public',
