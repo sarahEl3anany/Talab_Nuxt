@@ -1,6 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      WEBSITE_NAME_EN: process.env.WEBSITE_NAME_EN,
+      WEBSITE_ADDRESS: process.env.WEBSITE_ADDRESS,
+      API_BASE_URL: process.env.API_BASE_URL,
+    },
+  },
+  ssr: true,
+  nitro: {
+    baseURL: "http://localhost:3000",
+    prerender: {
+      crawlLinks: true,
+      failOnError: false, 
+    },
+  },
+  routeRules: {
+    "/**": { swr: true },
+    "/dashboard/**": { ssr: false },
+  },
   // axios: {
   //   baseURL: process.env.API_URL,
   // },
@@ -13,16 +32,6 @@ export default defineNuxtConfig({
   },
   image: {
     dir: "/public",
-    providers: {
-      local: {
-        // Defaults to '/_nuxt/image' if not set
-        provider: 'ipx',
-        options: {
-          baseURL: '/'
-        }
-      }
-    },
-    domains: [],
     alias: {
       public: '/public',
     },

@@ -3,7 +3,7 @@
       <div class="my-auto mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex space-x-2 w-12 h-12">
           <NuxtLink to="/" class="rounded-full">
-            <NuxtImg  src="/favicon.ico"></NuxtImg>
+            <img src="/favicon.ico" />
           </NuxtLink>
         </div>
         <div>
