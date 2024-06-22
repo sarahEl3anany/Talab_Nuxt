@@ -1,9 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  // axios: {
-  //   baseURL: process.env.API_URL,
-  // },
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.BASE_URL || 'http://127.0.0.1:8000',
+    },
+  },
   modules: ['@nuxtjs/tailwindcss', "@nuxt/image"],
   css:[
     '@fortawesome/fontawesome-svg-core/styles.css'

@@ -12,6 +12,12 @@
             <font-awesome-icon class="pl-3" :icon="['fas', 'arrow-right']" />
           </NuxtLink>
         </div>
+        <div>
+          <NuxtLink to="/login" class="inline-block border border-blue-900 rounded py-1 px-3 bg-gray-50 text-blue-900">
+            Login
+            <font-awesome-icon class="pl-3" :icon="['fas', 'arrow-right']" />
+          </NuxtLink>
+        </div>
       </div>
     </nav>
 </template>

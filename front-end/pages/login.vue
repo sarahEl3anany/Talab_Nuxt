@@ -28,7 +28,12 @@
   
   <script>
   export default {
-    name: 'LoginPage'
+    name: 'LoginPage',
+    methods:{
+      loginSubmit(){
+        
+      }
+    }
   }
   </script>
   
