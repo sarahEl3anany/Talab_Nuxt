@@ -1,0 +1,10 @@
+{
+    "scripts":{
+        "dev":"concurrently 'npm run dev:back' 'npm run dev:front'",
+        "dev:back":"cd back-end && php artisan serve",
+        "dev:front":"cd front-end && npm run dev"
+        },
+	"devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
