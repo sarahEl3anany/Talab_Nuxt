@@ -17,6 +17,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@nuxt/image": "^1.7.0",
     "nuxt": "^3.11.2",
+    "nuxt-vue3-google-signin": "^0.0.11",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
