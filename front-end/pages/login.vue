@@ -39,7 +39,7 @@
 <script lang="ts">
 import {
   GoogleSignInButton,
-  type CredentialResponse,
+  type CredentialResponse, decodeCredential
 } from "vue3-google-signin";
 
 export default {
@@ -47,8 +47,8 @@ export default {
   methods: {
     handleLoginSuccess(response: CredentialResponse) {
       const { credential } = response;
-      debugger
-      console.log("Access Token", credential);
+      const userProfileData = decodeCredential(String(credential));
+      console.log("User:", userProfileData);
     },
     handleLoginError() {
       console.error("Login failed");
