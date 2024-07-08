@@ -1,8 +1,10 @@
 
 <template>
   <NuxtLayout>
-    <template #header></template>
-    <Nuxt />
-    <template #footer></template>
+      <template #header></template>
+        <v-app>
+          <Nuxt />
+        </v-app>
+      <template #footer></template>
   </NuxtLayout>
 </template>
