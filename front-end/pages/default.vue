@@ -2,9 +2,7 @@
 <template>
   <NuxtLayout>
       <template #header></template>
-        <v-app>
-          <Nuxt />
-        </v-app>
+        <Nuxt />
       <template #footer></template>
   </NuxtLayout>
 </template>
